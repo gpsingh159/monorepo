@@ -1,8 +1,10 @@
 {
 	"name": "react-dashboard",
 	"private": true,
+	"homepage": "https://gpsingh159.github.io/monorepo/react-dashboard/",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build"
+		"build": "vite build",
+		"deploy": "gh-pages -d dist"
 	}
 }

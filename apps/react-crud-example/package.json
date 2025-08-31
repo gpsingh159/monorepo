@@ -1,8 +1,13 @@
 {
   "name": "react-crud-example",
   "private": true,
+  "homepage": "https://gpsingh159.github.io/monorepo/react-crud-example/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

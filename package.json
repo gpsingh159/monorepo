@@ -8,7 +8,8 @@
   "dev": "npm-run-all --parallel app:react-crud-example app:react-dashboard",
   "app:react-crud-example": "npm --prefix ./apps/react-crud-example run dev",
   "app:react-dashboard": "npm --prefix ./apps/react-dashboard run dev",
-  "build": "npm-run-all --parallel build:react-crud-example build:react-dashboard",
+  "build": "npm run prebuild && npm-run-all --parallel build:react-crud-example build:react-dashboard",
+  "prebuild": "npm --prefix ./packages/common-utils run build",
   "build:react-crud-example": "npm --prefix ./apps/react-crud-example run build",
   "build:react-dashboard": "npm --prefix ./apps/react-dashboard run build"
   },
